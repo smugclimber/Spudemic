@@ -226,7 +226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -334}
+  m_AnchoredPosition: {x: 120, y: -334}
   m_SizeDelta: {x: 301, y: 122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33051413
@@ -422,50 +422,12 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &592801268
+--- !u!114 &592801268 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 114666093546967934, guid: fe9188b7c592e49b396b4f5e61d5a8ca,
     type: 2}
   m_PrefabInternal: {fileID: 1525044003}
-  m_GameObject: {fileID: 598303330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914b8a75977ed47209fdf798a93ddac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoLoadNextLevelAfter: 0
---- !u!1 &598303330
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1806265000178876, guid: fe9188b7c592e49b396b4f5e61d5a8ca,
-    type: 2}
-  m_PrefabInternal: {fileID: 1525044003}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 598303331}
-  - component: {fileID: 592801268}
-  m_Layer: 0
-  m_Name: LevelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &598303331
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4662121636700362, guid: fe9188b7c592e49b396b4f5e61d5a8ca,
-    type: 2}
-  m_PrefabInternal: {fileID: 1525044003}
-  m_GameObject: {fileID: 598303330}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &638028216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1416,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe9188b7c592e49b396b4f5e61d5a8ca, type: 2}
-  m_RootGameObject: {fileID: 598303330}
   m_IsPrefabParent: 0
 --- !u!1 &1544698205
 GameObject:
@@ -1708,7 +1669,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 953911577f3e64107956e49c1e5b4de6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9ba7b4354b8e4547bbf10227bdb14e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

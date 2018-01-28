@@ -10,19 +10,10 @@ public class PlayerController : MonoBehaviour
     public GameObject purell;
     public int health = 3;
 
-
     // Use this for initialization
     void Start()
     {
 
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Win")
-        {
-            (col.gameObject);
-        }
     }
 
     // Update is called once per frame
@@ -93,7 +84,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-	void Die() {
-		Destroy(gameObject);
-	}
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
+
 }

@@ -8,9 +8,18 @@ public class PlayerController : MonoBehaviour {
 	public Transform firePoint;
 	public GameObject purell;
 
+	public Transform groundCheck;
+	public float groundCheckRadius;
+	public LayerMask whatIsGround;
+	private bool grounded;
+
 	// Use this for initialization
 	void Start () {
 		
+	}
+
+	void FixedUpdate () {
+		grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 	}
 	
 	// Update is called once per frame
@@ -18,7 +27,8 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+			
+			if (grounded) GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
 		}
 
 		if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))

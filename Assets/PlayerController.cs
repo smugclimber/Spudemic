@@ -17,14 +17,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Win")
-        {
-            (col.gameObject);
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {

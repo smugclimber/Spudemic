@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
     public Transform firePoint;
     public GameObject purell;
+	public int health = 150;
 
     // Use this for initialization
     void Start()
@@ -65,4 +66,21 @@ public class PlayerController : MonoBehaviour
             Instantiate(purell, firePoint.position, firePoint.rotation);
         }
     }
+
+		void OnTriggerEnter2D(Collider2D coughCollider){
+			print ("in collider");
+			CoughCollider cough =  coughCollider.gameObject.GetComponent<CoughCollider>();
+			if(cough){ //Deduct health when collide with cloud)
+				health -= 100; 
+				print ("in cough method here");
+				Destroy(cough);
+				if(health <= 0){
+					Die();
+				}
+			}
+		}
+
+		void Die() {
+			Destroy(gameObject);
+		}
 }

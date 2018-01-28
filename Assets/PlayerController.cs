@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
     public Transform firePoint;
     public GameObject purell;
-    public int health = 3;
+	public int health = 3;
+
 
     // Use this for initialization
     void Start()
@@ -62,11 +63,14 @@ public class PlayerController : MonoBehaviour
         }
 
         // fire purell
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+		if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(purell, firePoint.position, firePoint.rotation);
         }
-
+        if (this.health <= 0)
+        {
+            this.Die();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coughCollider)
@@ -77,17 +81,16 @@ public class PlayerController : MonoBehaviour
             health -= 100;
             print("in cough method here");
             Destroy(cough);
-            if (health <= 0)
+            if (health == 0)
             {
-                Die();
+                this.Die();
             }
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
-
 
 }

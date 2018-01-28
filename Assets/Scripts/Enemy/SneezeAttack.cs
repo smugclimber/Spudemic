@@ -18,7 +18,7 @@ public class SneezeAttack : MonoBehaviour {
         rateOfFire -= Time.deltaTime;
 		if (rateOfFire <= 0.0f)
         {
-            Vector3 pos = new Vector3(this.transform.position.x + 1, this.transform.position.y, 0.2f);
+            Vector3 pos = new Vector3(this.transform.position.x - 1, this.transform.position.y, 0.2f);
             Instantiate(sneezePrefab, pos, Quaternion.identity);
             rateOfFire = originalRateOfFire;
         }

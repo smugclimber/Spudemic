@@ -11,7 +11,7 @@ public class CoughCollider : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coughCollider){
-		print ("in cough");
+		
 	}
 
 	public void Evaporate(){

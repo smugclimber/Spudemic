@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public GameObject purell;
 	public int health = 3;
 
+
     // Use this for initialization
     void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
 
         // Move Ida in the LEFT Direction
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
@@ -65,21 +67,27 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(purell, firePoint.position, firePoint.rotation);
         }
+
     }
 
-		void OnTriggerEnter2D(Collider2D coughCollider){
-			CoughCollider cough =  coughCollider.gameObject.GetComponent<CoughCollider>();
-			if(cough){ //Deduct health when collide with cloud)
-				health -= 100; 
-				print ("in cough method here");
-				Destroy(cough);
-				if(health <= 0){
-					this.Die();
-				}
-			}
-		}
+    void OnTriggerEnter2D(Collider2D coughCollider)
+    {
+        CoughCollider cough = coughCollider.gameObject.GetComponent<CoughCollider>();
+        if (cough)
+        { //Deduct health when collide with cloud)
+            health -= 100;
+            print("in cough method here");
+            Destroy(cough);
+            if (health <= 0)
+            {
+                Die();
+            }
+        }
+    }
 
-		void Die() {
-			Destroy(gameObject);
-		}
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
 }

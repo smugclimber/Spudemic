@@ -18,14 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/02 Level_01.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/02 Level_02.unity
+    path: Assets/Scenes/03 Level_02.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/02 Level_03.unity
+    path: Assets/Scenes/04b Lose.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/03b Lose.unity
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/03b Win.unity
+    path: Assets/Scenes/04b Win.unity
     guid: 00000000000000000000000000000000

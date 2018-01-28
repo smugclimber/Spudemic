@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // fire purell
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+		if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(purell, firePoint.position, firePoint.rotation);
         }

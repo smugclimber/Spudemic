@@ -14,7 +14,7 @@ public class MusicManager : MonoBehaviour {
         Debug.Log("Don't destroy on load: " + name);
     }
 
-    void Start()
+    void Update()
     {
         audioSource = GetComponent<AudioSource>();
         SceneManager.sceneLoaded += OnSceneLoaded;

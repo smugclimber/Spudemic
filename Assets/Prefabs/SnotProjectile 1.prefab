@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 60611823526525442}
   - component: {fileID: 50173965720960294}
   m_Layer: 0
-  m_Name: SnotProjectileDown
+  m_Name: SnotProjectile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

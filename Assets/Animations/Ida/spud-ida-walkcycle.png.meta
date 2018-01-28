@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e360c4bd8f798574dba27e7933af9bae
-timeCreated: 1517152995
+timeCreated: 1517156299
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -92,10 +92,10 @@ TextureImporter:
       name: spud-ida-walkcycle_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 916
+        x: 0
+        y: 1112
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,9 +106,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 500
-        y: 916
+        y: 1112
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,9 +119,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 916
+        y: 1112
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,9 +132,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1500
-        y: 916
+        y: 1112
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,9 +145,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2000
-        y: 916
+        y: 1112
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,9 +158,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2500
-        y: 916
+        y: 1112
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +173,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,7 +186,7 @@ TextureImporter:
         x: 500
         y: 0
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,7 +199,7 @@ TextureImporter:
         x: 1000
         y: 0
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,7 +212,7 @@ TextureImporter:
         x: 1500
         y: 0
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,7 +225,7 @@ TextureImporter:
         x: 2000
         y: 0
         width: 500
-        height: 916
+        height: 1112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

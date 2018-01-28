@@ -20,7 +20,7 @@ public class PurellController : MonoBehaviour {
 		GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
 	}
 
-	void onTriggerEnter2D(Collider2D other) {
-		Destroy(gameObject);
+	void OnTriggerEnter2D(Collider2D other) {
+		Destroy (gameObject);
 	}
 }

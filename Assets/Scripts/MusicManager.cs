@@ -33,7 +33,7 @@ public class MusicManager : MonoBehaviour {
             audioSource.clip = thisLevelMusic;
             audioSource.loop = true;
             audioSource.Play();
-            if (scene.buildIndex >= 4){ //If level element is 4 or 5, do not loop sound effects
+            if (scene.buildIndex >= 5){ //If level element is 5 or 6, do not loop sound effects
                 audioSource.loop = false;
             }
         }

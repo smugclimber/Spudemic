@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212068678611368570}
   - component: {fileID: 60952659802195988}
   - component: {fileID: 114665414449621432}
+  - component: {fileID: 114979774187485418}
   m_Layer: 0
   m_Name: Cough 1
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139141823182592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.86, y: 3.55, z: 23.490559}
+  m_LocalPosition: {x: -0.41372132, y: 2.3084333, z: 23.490559}
   m_LocalScale: {x: 0.34670338, y: 0.30743122, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,13 +67,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.09038499, y: 1.9022784}
-      - {x: -2.1969404, y: 0.7138291}
-      - {x: -1.9763173, y: -0.6264421}
-      - {x: -0.99625117, y: -1.563038}
+    - - {x: -0.08609873, y: 0.8218401}
+      - {x: -0.9867671, y: 0.8559924}
+      - {x: -0.84178025, y: -0.19995347}
+      - {x: -0.6684966, y: -0.7100608}
       - {x: 0.8056145, y: -0.95145637}
-      - {x: 1.357784, y: -1.8688289}
-      - {x: 1.8354021, y: 0.40803978}
+      - {x: 0.72748655, y: -0.19130643}
+      - {x: 0.5243822, y: 0.3511749}
 --- !u!114 &114665414449621432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,6 +86,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+--- !u!114 &114979774187485418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139141823182592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465b5e291cae0e745bb2590342a2d8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeRate: 3
 --- !u!212 &212068678611368570
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -94,7 +107,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -110,7 +122,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -128,4 +139,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0

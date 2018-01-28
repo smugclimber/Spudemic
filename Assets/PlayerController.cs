@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,10 +27,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            this.GetComponent<SpriteRenderer>().flipX = true;
         }
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            this.GetComponent<SpriteRenderer>().flipX = false;
         }
 
         // Move Ida in the RIGHT Direction
@@ -75,6 +78,11 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coughCollider)
     {
+        if (coughCollider.CompareTag("WIN"))
+        {
+
+        }
+
         CoughCollider cough = coughCollider.gameObject.GetComponent<CoughCollider>();
         if (cough)
         { //Deduct health when collide with cloud)
@@ -88,9 +96,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+
     void Die()
     {
+
         Destroy(this.gameObject);
+        loadDeathLvl();
     }
 
+    public void loadDeathLvl()
+    {
+        SceneManager.LoadSceneAsync("04b Lose");
+    }
 }

@@ -29,5 +29,8 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log ("Quit requested");
 		Application.Quit ();
 	}
-
+    public void loadLvl2()
+    {
+        SceneManager.LoadSceneAsync("02 Level_01");
+    }
 }

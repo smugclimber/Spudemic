@@ -67,7 +67,10 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(purell, firePoint.position, firePoint.rotation);
         }
-
+        if (this.health <= 0)
+        {
+            this.Die();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coughCollider)
@@ -78,16 +81,16 @@ public class PlayerController : MonoBehaviour
             health -= 100;
             print("in cough method here");
             Destroy(cough);
-            if (health <= 0)
+            if (health == 0)
             {
-                Die();
+                this.Die();
             }
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 
 }

@@ -53,6 +53,7 @@ public class SneezeProjectile : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            print("HERE");
             col.gameObject.GetComponent<PlayerController>().health -= this.damage;
             Destroy(this.gameObject);
         }

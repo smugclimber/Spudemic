@@ -13,7 +13,11 @@ public class PurellController : MonoBehaviour {
 
 		if(player.transform.localScale.x < 0) speed = -speed;
 	}
-	
+
+	void FixedUpdate () {
+		transform.Rotate (Vector3.forward * -45);
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
